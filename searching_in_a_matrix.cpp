@@ -5,8 +5,8 @@ int main()
 {
     int n, m;
     cin >> n >> m;
-
-    // taking input in 2d array
+     int key;
+    cin >> key;
     int arr[n][m];
     for (int i = 0; i < n; i++)
     {
@@ -15,15 +15,13 @@ int main()
             cin >> arr[i][j];
         }
     }
-
-    // printing 2d array
-    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            cout << arr[i][j] << " ";
+            if(arr[i][j]==key){
+                cout <<" row is "<< i <<"coloumn is " << j<<endl;
+            }
         }
-        cout << endl;
     }
 }
